@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Student Elections Website Theme
+   * Color palette: dark blue (#0B1E3F), black (#000000), ivory (#FFFFF0)
+   * Font: Fira Sans with Cyrillic and Latin support
+   */
+  :root {
+    /* Main election theme colors */
+    --background: 60 100% 97%; /* ivory #FFFFF0 */
+    --foreground: 0 0% 0%; /* black #000000 */
+
+    --card: 60 100% 97%; /* ivory #FFFFF0 */
+    --card-foreground: 0 0% 0%; /* black #000000 */
+
+    --popover: 60 100% 97%; /* ivory #FFFFF0 */
+    --popover-foreground: 0 0% 0%; /* black #000000 */
+
+    /* Primary colors using dark blue */
+    --primary: 213 81% 15%; /* dark blue #0B1E3F */
+    --primary-foreground: 60 100% 97%; /* ivory #FFFFF0 */
+
+    --secondary: 60 100% 94%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 60 100% 94%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 213 81% 15%;
+    --accent-foreground: 60 100% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 100% 97%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 213 81% 15%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-ivory text-black font-fira;
+  }
+
+  html {
+    @apply font-fira;
+  }
+}
