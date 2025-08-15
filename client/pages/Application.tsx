@@ -24,9 +24,19 @@ export default function Application() {
       {/* Section 1: Top section with dark blue background */}
       <section className="bg-dark-blue text-ivory py-60 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
           </h1>
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
+            Очікуйте на голосування!
+          </h1> */}
+
+          <p className="text-lg text-ivory/80 mb-12 font-medium">
+            Кінцевий термін: 8 вересня 23:59
+          </p>
+          {/* <p className="text-lg text-ivory/80 mb-12 font-medium">
+            Початок: середа, 10 вересня
+          </p> */}
 
           <button
             onClick={handleApplyClick}
@@ -46,7 +56,9 @@ export default function Application() {
                 key={index}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <div className={`flex items-center gap-6 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                <div
+                  className={`flex items-center gap-6 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                >
                   {/* Icon placeholder */}
                   <div className="w-20 h-20 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-gray-400 text-xs">PNG</span>
