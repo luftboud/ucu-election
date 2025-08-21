@@ -51,6 +51,23 @@ export default function CandidatesPage() {
     }
   ];
 
+  const specialtyLink = {
+    "богословя-(бакалаврат)": "https://forms.gle/i3LrNHb4aSbJXp8g6",
+    "компютерні-науки": "#",
+    "it-%26-da": "#",
+    "робототехніка": "#",
+    "соціальна-робота": "#",
+    "психологія": "#",
+    "етика-політика-економіка": "#",
+    "соціологія": "#",
+    "історія": "#",
+    "філологія": "#",
+    "культурологія": "#",
+    "право": "#",
+
+  };
+  const fallbackLink = "#";
+
   const handleCandidateClick = (candidate: Candidate) => {
     setSelectedCandidate(candidate);
     setIsModalOpen(true);
@@ -63,7 +80,8 @@ export default function CandidatesPage() {
 
   const handleFinalSubmit = () => {
     // Placeholder for Google Form link
-    window.open('#', '_blank');
+    const link = specialtyLink[specialtyId] ?? fallbackLink;
+    window.open(link, '_blank');
   };
 
   // Decode names for display
