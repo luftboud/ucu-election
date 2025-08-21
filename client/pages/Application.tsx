@@ -1,7 +1,7 @@
 export default function Application() {
   const handleApplyClick = () => {
     // Placeholder for Google Form link
-    window.open('#', '_blank');
+    window.open("https://forms.gle/H2o1bjvFe8i7JsBB8", "_blank");
   };
 
   const infoBlocks = [
