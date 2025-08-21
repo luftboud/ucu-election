@@ -49,6 +49,33 @@ export default function Application() {
             Податись
           </button>
         </div>
+        {/* Scroll Down Button */}
+        <div className="absolute bottom-[15%] left-0 right-0 flex justify-center">
+          <button
+            onClick={() => {
+              const nextSection = document.querySelector(
+                "section:nth-of-type(2)"
+              );
+              nextSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="text-ivory/70 hover:text-ivory transition-colors duration-300 animate-bounce"
+            aria-label="Scroll down"
+          >
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </button>
+        </div>
       </section>
 
       {/* Section 2: Bottom section with ivory background */}
