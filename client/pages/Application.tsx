@@ -28,26 +28,33 @@ export default function Application() {
       {/* Section 1: Top section with dark blue background */}
       <section className="bg-dark-blue text-ivory h-screen px-4 flex items-center">
         <div className="container mx-auto text-center">
+          {/* Applications open */}
+
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
           </h1>
-          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Очікуйте на голосування!
-          </h1> */}
-
           <p className="text-lg text-ivory/80 mb-12 font-medium">
             Кінцевий термін: 8 вересня 23:59
           </p>
-          {/* <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Початок: середа, 10 вересня
-          </p> */}
-
           <button
             onClick={handleApplyClick}
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Податись
           </button>
+
+          {/* Applications closed */}
+
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
+            Очікуйте на голосування!
+          </h1>
+          <p className="text-lg text-ivory/80 mb-12 font-medium">
+            Початок: середа, 10 вересня
+          </p>
+          <img
+            className="h-24 mx-auto mb-8"
+            src="images/application-ended.webp"
+            alt="a cat looking" /> */}
         </div>
         {/* Scroll Down Button */}
         <div className="absolute bottom-[15%] left-0 right-0 flex justify-center">
