@@ -7,9 +7,9 @@ export default function Development() {
 
         {/* Cat playing with yarn ball SVG illustration */}
         <div className="mb-8 flex justify-center relative">
-          <img src="client/data/images/cat.webp" alt="a cat" className="h-36" />
+          <img src="images/cat.webp" alt="a cat" className="h-36" />
           <img
-            src="client/data/images/qm.webp"
+            src="images/qm.webp"
             alt="a question mark"
             className="h-24 animate-tilt z-3 absolute right-6"
           />

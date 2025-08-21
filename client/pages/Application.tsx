@@ -9,7 +9,7 @@ export default function Application() {
       title: "Що таке Рада Студентів?",
       content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
-      img: "client/data/images/scouncil.png",
+      img: "images/scouncil.png",
     },
     {
       title: "Як бути представником?",
