@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Application from "./pages/Application";
 import Voting from "./pages/Voting";
 import Results from "./pages/Results";
@@ -17,6 +18,8 @@ const queryClient = new QueryClient();
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
     <main className="flex-1">{children}</main>
+    <Header/>
+    <main className="flex-1 mt-8">{children}</main>
     <Footer />
   </div>
 );
