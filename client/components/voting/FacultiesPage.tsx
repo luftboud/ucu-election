@@ -5,7 +5,8 @@ export default function FacultiesPage() {
     {
       id: 'philosophy-theology',
       name: 'Філософсько-Богословський',
-      slug: 'philosophy-theology'
+      slug: 'philosophy-theology',
+      img: 'client/data/images/philosophy-theology.png'
     },
     {
       id: 'applied-sciences',
@@ -24,7 +25,7 @@ export default function FacultiesPage() {
     },
     {
       id: 'humanities',
-      name: 'Гуманітарний',
+      name: 'Гуманітарний Факультет',
       slug: 'humanities'
     },
     {
@@ -51,7 +52,7 @@ export default function FacultiesPage() {
             <VotingCard
               key={faculty.id}
               title={faculty.name}
-              href={`/faculty/${faculty.slug}`}
+              href={`/voting/faculty/${faculty.slug}`}
               image="placeholder"
             />
           ))}

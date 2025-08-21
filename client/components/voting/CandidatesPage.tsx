@@ -75,7 +75,7 @@ export default function CandidatesPage() {
         {/* Back button */}
         <div className="mb-6">
           <Link
-            to={`/faculty/${facultyId}/specialty/${specialtyId}/master/${master}`}
+            to={`/voting/faculty/${facultyId}/specialty/${specialtyId}/master/${master}`}
             className="inline-flex items-center text-dark-blue hover:text-blue-800 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />

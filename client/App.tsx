@@ -12,12 +12,11 @@ import Application from "./pages/Application";
 import Voting from "./pages/Voting";
 import Results from "./pages/Results";
 import NotFound from "./pages/NotFound";
-//h
+import Development from "./pages/Development";
 const queryClient = new QueryClient();
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
-    <main className="flex-1">{children}</main>
     <Header/>
     <main className="flex-1 mt-8">{children}</main>
     <Footer />
@@ -33,6 +32,8 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Application />} />
+            <Route path="/voting/*" element={<Development />} />
+            <Route path="/results" element={<Development />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

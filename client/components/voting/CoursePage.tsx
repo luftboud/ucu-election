@@ -30,7 +30,7 @@ export default function CoursePage() {
         {/* Back button */}
         <div className="mb-6">
           <Link
-            to={`/faculty/${facultyId}`}
+            to={`/voting/faculty/${facultyId}`}
             className="inline-flex items-center text-dark-blue hover:text-blue-800 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
@@ -45,9 +45,7 @@ export default function CoursePage() {
           <p className="text-base text-gray-700 mb-2">
             Спеціальність: {specialtyName}
           </p>
-          <p className="text-sm text-gray-600">
-            Оберіть ваш курс навчання
-          </p>
+          <p className="text-sm text-gray-600">Оберіть ваш курс навчання</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -55,7 +53,7 @@ export default function CoursePage() {
             <VotingCard
               key={course}
               title={`${course} курс`}
-              href={`/faculty/${facultyId}/specialty/${specialtyId}/master/${master}/course/${course}`}
+              href={`/voting/faculty/${facultyId}/specialty/${specialtyId}/master/${master}/course/${course}`}
             />
           ))}
         </div>
