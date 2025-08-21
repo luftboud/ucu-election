@@ -6,23 +6,27 @@ export default function Application() {
 
   const infoBlocks = [
     {
-      title: 'Що таке Рада Студентів',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.'
+      title: "Що таке Рада Студентів?",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
+      img: "client/data/images/scouncil.png",
     },
     {
-      title: 'Обов\'язки представників',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.'
+      title: "Як бути представником?",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
     },
     {
-      title: 'Переваги бути представником',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.'
-    }
+      title: "Хто такі СВК?",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Section 1: Top section with dark blue background */}
-      <section className="bg-dark-blue text-ivory py-60 px-4">
+      <section className="bg-dark-blue text-ivory h-screen px-4 flex items-center">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
@@ -60,8 +64,12 @@ export default function Application() {
                   className={`flex items-center gap-6 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
                 >
                   {/* Icon placeholder */}
-                  <div className="w-20 h-20 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-gray-400 text-xs">PNG</span>
+                  <div className="w-20 h-20  rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img
+                      src={block.img}
+                      alt={block.title}
+                      className="w-20 h-24 object-cover"
+                    ></img>
                   </div>
 
                   {/* Text content */}
