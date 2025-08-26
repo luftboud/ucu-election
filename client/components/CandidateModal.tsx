@@ -1,42 +1,37 @@
-import { X } from 'lucide-react';
-
-interface Candidate {
-  id: string;
-  name: string;
-  photo?: string;
-  description: string;
-  shortDescription: string;
-}
+import { X } from "lucide-react";
+import { VotingCandidate } from "../data/candidates.ts";
 
 interface CandidateModalProps {
-  candidate: Candidate | null;
+  candidate: VotingCandidate | null;
   isOpen: boolean;
   onClose: () => void;
 }
 
-export default function CandidateModal({ candidate, isOpen, onClose }: CandidateModalProps) {
+export default function CandidateModal({
+  candidate,
+  isOpen,
+  onClose,
+}: CandidateModalProps) {
   if (!isOpen || !candidate) return null;
 
   const handleFormSubmit = () => {
     // Placeholder for Google Form link
-    window.open('#', '_blank');
+    window.open("#", "_blank");
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-black bg-opacity-50"
         onClick={onClose}
       />
-      
+
       {/* Modal */}
       <div className="relative bg-white rounded-lg max-w-2xl mx-4 max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex justify-between items-center p-6 border-b">
-          <h2 className="text-2xl font-bold text-black">
-            {candidate.name}
-          </h2>
+          <h2 className="text-2xl font-bold text-black">{candidate.name}</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -44,14 +39,15 @@ export default function CandidateModal({ candidate, isOpen, onClose }: Candidate
             <X className="w-6 h-6" />
           </button>
         </div>
-        
+
         {/* Content */}
         <div className="p-6">
           {/* Photo placeholder */}
           <div className="w-48 h-48 bg-gray-200 rounded-lg mx-auto mb-6 flex items-center justify-center">
-            <span className="text-gray-400">Фото кандидата</span>
+            {/* <span className="text-gray-400">Фото кандидата</span> */}
+            <img src={candidate.image} alt={candidate.name} className="w-full h-full object-cover rounded-lg" />
           </div>
-          
+
           {/* Description */}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4 text-black">
@@ -61,7 +57,7 @@ export default function CandidateModal({ candidate, isOpen, onClose }: Candidate
               {candidate.description}
             </p>
           </div>
-          
+
           {/* Action button */}
           <div className="text-center">
             <button

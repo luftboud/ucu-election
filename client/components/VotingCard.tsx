@@ -23,19 +23,15 @@ export default function VotingCard({
   const cardContent = (
     <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer">
       {image && (
-        <div className="w-full h-40 bg-gray-200 rounded-lg mb-3 flex items-center justify-center">
-          <span className="text-gray-400 text-sm">Зображення</span>
+        <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center overflow-hidden">
+          <img src={image} alt={title} className="w-full object-contain" />
         </div>
       )}
-
-      <h3 className="text-lg font-bold text-black mb-2 text-center">
-        {title}
-      </h3>
+      {children}
+      <h3 className="text-lg font-bold text-black mb-2 text-center">{title}</h3>
 
       {subtitle && (
-        <p className="text-gray-600 text-center mb-1 font-medium">
-          {subtitle}
-        </p>
+        <p className="text-gray-600 text-center mb-1 font-medium">{subtitle}</p>
       )}
 
       {description && (
@@ -43,8 +39,6 @@ export default function VotingCard({
           {description}
         </p>
       )}
-
-      {children}
     </div>
   );
 

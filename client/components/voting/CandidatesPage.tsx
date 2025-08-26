@@ -1,74 +1,59 @@
-import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import VotingCard from '../VotingCard';
-import CandidateModal from '../CandidateModal';
-
-interface Candidate {
-  id: string;
-  name: string;
-  photo?: string;
-  description: string;
-  shortDescription: string;
-}
+import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import VotingCard from "../VotingCard";
+import CandidateModal from "../CandidateModal";
+import {
+  getCandidatesForPosition,
+  VotingCandidate,
+} from "../../data/candidates.ts";
 
 export default function CandidatesPage() {
-  const { facultyId, specialtyId, master, courseId } = useParams<{ 
-    facultyId: string; 
-    specialtyId: string; 
+  const { facultyId, specialtyId, master, courseId } = useParams<{
+    facultyId: string;
+    specialtyId: string;
     master: string;
     courseId: string;
   }>();
 
-  const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
+  const [selectedCandidate, setSelectedCandidate] =
+    useState<VotingCandidate | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Sample candidates data
-  const candidates: Candidate[] = [
-    {
-      id: '1',
-      name: 'Анна Петренко',
-      shortDescription: 'Активістка студентського самоврядування',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },
-    {
-      id: '2',
-      name: 'Михайло Коваленко',
-      shortDescription: 'Лідер студентських ініціатив',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },
-    {
-      id: '3',
-      name: 'Софія Іваненко',
-      shortDescription: 'Представниця академічних питань',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },
-    {
-      id: '4',
-      name: 'Олександр Мельник',
-      shortDescription: 'Координатор культурних заходів',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    }
-  ];
+  // Properly decode specialty name from URL and get candidates from centralized data
+  const decodedSpecialtyName = specialtyId
+    ? decodeURIComponent(specialtyId)
+    : "";
+  // Capitalize first letter to match data format
+  const specialtyName =
+    decodedSpecialtyName.charAt(0).toUpperCase() +
+    decodedSpecialtyName.slice(1);
+  const course = courseId ? parseInt(courseId) : 1;
+
+  // Get candidates for this specific position
+  const candidates = getCandidatesForPosition(
+    facultyId || "",
+    specialtyName || "",
+    course
+  );
 
   const specialtyLink = {
     "богословя-(бакалаврат)": "https://forms.gle/i3LrNHb4aSbJXp8g6",
     "компютерні-науки": "#",
     "it-%26-da": "#",
-    "робототехніка": "#",
+    робототехніка: "#",
     "соціальна-робота": "#",
-    "психологія": "#",
+    психологія: "#",
     "етика-політика-економіка": "#",
-    "соціологія": "#",
-    "історія": "#",
-    "філологія": "#",
-    "культурологія": "#",
-    "право": "#",
-
+    соціологія: "#",
+    історія: "#",
+    філологія: "#",
+    культурологія: "#",
+    право: "#",
   };
   const fallbackLink = "#";
 
-  const handleCandidateClick = (candidate: Candidate) => {
+  const handleCandidateClick = (candidate: VotingCandidate) => {
     setSelectedCandidate(candidate);
     setIsModalOpen(true);
   };
@@ -81,11 +66,8 @@ export default function CandidatesPage() {
   const handleFinalSubmit = () => {
     // Placeholder for Google Form link
     const link = specialtyLink[specialtyId] ?? fallbackLink;
-    window.open(link, '_blank');
+    window.open(link, "_blank");
   };
-
-  // Decode names for display
-  const specialtyName = specialtyId?.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
   return (
     <div className="min-h-screen bg-ivory px-4 py-10">
@@ -113,32 +95,56 @@ export default function CandidatesPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {candidates.map((candidate) => (
-            <VotingCard
-              key={candidate.id}
-              title={candidate.name}
-              description={candidate.shortDescription}
-              onClick={() => handleCandidateClick(candidate)}
-            >
-              <div className="mt-3">
-                <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
-                  <span className="text-gray-400 text-xs">Фото</span>
-                </div>
-              </div>
-            </VotingCard>
-          ))}
-        </div>
+        {/* Check if candidates exist for this position */}
+        {candidates.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              {candidates.map((candidate) => (
+                <VotingCard
+                  key={candidate.id}
+                  title={candidate.name}
+                  image={candidate.image}
+                  subtitle="Кандидат"
+                  onClick={() => handleCandidateClick(candidate)}
+                >
+                  {/* <div className="mt-3">
+                    <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <span className="text-gray-400 text-xs">Фото</span>
+                    </div>
+                  </div> */}
+                </VotingCard>
+              ))}
+            </div>
 
-        {/* Final submit button */}
-        <div className="text-center">
-          <button
-            onClick={handleFinalSubmit}
-            className="bg-dark-blue text-ivory px-12 py-4 text-xl font-semibold rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            Обрати свого кандидата
-          </button>
-        </div>
+            {/* Final submit button */}
+            <div className="text-center">
+              <button
+                onClick={handleFinalSubmit}
+                className="bg-dark-blue text-ivory px-12 py-4 text-xl font-semibold rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              >
+                Обрати свого кандидата
+              </button>
+            </div>
+          </>
+        ) : (
+          /* No candidates available */
+          <div className="text-center py-16">
+            <div className="bg-white rounded-lg p-8 shadow-sm max-w-md mx-auto">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Кандидати не знайдені
+              </h3>
+              <p className="text-gray-600 mb-6">
+                На даний момент немає кандидатів для цієї позиції.
+              </p>
+              <Link
+                to="/voting"
+                className="bg-dark-blue text-ivory px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors"
+              >
+                Повернутися до вибору факультету
+              </Link>
+            </div>
+          </div>
+        )}
 
         {/* Candidate Modal */}
         <CandidateModal

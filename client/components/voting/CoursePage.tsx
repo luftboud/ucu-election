@@ -1,28 +1,30 @@
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import VotingCard from '../VotingCard';
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import VotingCard from "../VotingCard";
 
 export default function CoursePage() {
-  const { facultyId, specialtyId, master } = useParams<{ 
-    facultyId: string; 
-    specialtyId: string; 
+  const { facultyId, specialtyId, master } = useParams<{
+    facultyId: string;
+    specialtyId: string;
     master: string;
   }>();
 
   function checkIfMaster() {
     if (Number(master)) {
-      console.log(1)
-      return [1, 2]
+      return [1, 2];
     }
-    console.log(0)
-    return [1, 2, 3, 4]
+    return [1, 2, 3, 4];
   }
 
   const courses = checkIfMaster();
-  // const courses = [1,2,3,4]
 
-  // Decode specialty name for display
-  const specialtyName = specialtyId?.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  // Properly decode specialty name from URL for display
+  const decodedSpecialtyName = specialtyId
+    ? decodeURIComponent(specialtyId)
+    : "";
+  const specialtyName =
+    decodedSpecialtyName.charAt(0).toUpperCase() +
+    decodedSpecialtyName.slice(1);
 
   return (
     <div className="min-h-screen bg-ivory px-4 py-10">

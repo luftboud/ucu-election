@@ -13,8 +13,8 @@ export default function SpecialtiesPage() {
     "philosophy-theology": {
       name: "Філософсько-Богословський",
       specialties: [
-        ["Богослов'я (бакалаврат)", "0"],
-        ["Християнська педагогіка та організація дозвілля", "1"],
+        ["Богослов'я", "0"],
+        ["Християнська педагогіка", "1"],
         ["Богослов'я (магістратура)", "1"],
       ],
     },
@@ -22,7 +22,7 @@ export default function SpecialtiesPage() {
       name: "Прикладних Наук",
       specialties: [
         ["Комп'ютерні науки", "0"],
-        ["IT & DA", "0"],
+        ["Іт та аналітика рішень", "0"],
         ["Робототехніка", "1"],
         ["Науки про дані", "1"],
       ],
@@ -34,14 +34,14 @@ export default function SpecialtiesPage() {
         ["Психологія", "0"],
         ["Фізична терапія", "1"],
         ["Ерготерапія", "1"],
-        ["Клінічна психологія (КПТ)", "1"],
-        ["Клінічна психологія (ОПТ)", "1"],
+        ["Клінічна психологія (когнітивно-поведінкова терапія)", "1"],
+        ["Клінічна психологія (психодинамічна терапія)", "1"],
       ],
     },
     "social-sciences": {
       name: "Суспільних Наук",
       specialties: [
-        ["Етика-Політика-Економіка", "0"],
+        ["Етика-політика-економіка", "0"],
         ["Соціологія", "0"],
         ["Журналістика", "1"],
         ["Медіакомунікації", "1"],
@@ -55,16 +55,29 @@ export default function SpecialtiesPage() {
         ["Історія", "0"],
         ["Філологія", "0"],
         ["Культурологія", "0"],
-        ["Майбутнє спадщини: історія, культура, література", "1"],
+        ["Майбутнє спадщини", "1"],
       ],
     },
     law: {
       name: "Факультет Права",
-      specialties: [["Право", "0"]],
+      specialties: [
+        ["Право", "0"],
+        ["Право (магістратура)", "1"],
+      ],
+    },
+    "business-school": {
+      name: "Бізнес-школа",
+      specialties: [
+        ["Менеджмент маркетингової діяльності", "1"],
+        ["Інновації та підприємництво", "1"],
+        ["Управління організаціями які впливають", "1"],
+        ["Бізнес адміністрування", "1"],
+        ["Управління технологіями", "1"],
+      ],
     },
   };
 
-  const faculty = facultyData[facultyId || ''];
+  const faculty = facultyData[facultyId || ""];
 
   if (!faculty) {
     return (
@@ -73,10 +86,7 @@ export default function SpecialtiesPage() {
           <h1 className="text-2xl font-bold text-dark-blue mb-4">
             Факультет не знайдено
           </h1>
-          <Link 
-            to="/" 
-            className="text-dark-blue hover:underline"
-          >
+          <Link to="/voting" className="text-dark-blue hover:underline">
             Повернутися до вибору факультету
           </Link>
         </div>
@@ -110,7 +120,7 @@ export default function SpecialtiesPage() {
             <VotingCard
               key={index}
               title={specialty[0]}
-              href={`/voting/faculty/${facultyId}/specialty/${encodeURIComponent(specialty[0].toLowerCase().replace(/\s+/g, "-").replace(/'/g, ""))}/master/${specialty[1]}`}
+              href={`/voting/faculty/${facultyId}/specialty/${encodeURIComponent(specialty[0].toLowerCase())}/master/${specialty[1].toString()}`}
             />
           ))}
         </div>
