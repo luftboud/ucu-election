@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import Application from "./pages/Application";
 import Voting from "./pages/Voting";
 import Results from "./pages/Results";
@@ -29,6 +30,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Application />} />
