@@ -1,38 +1,49 @@
-import VotingCard from '../VotingCard';
+import VotingCard from "../VotingCard";
 
 export default function FacultiesPage() {
   const faculties = [
     {
-      id: 'philosophy-theology',
-      name: 'Філософсько-Богословський',
-      slug: 'philosophy-theology',
-      img: 'client/data/images/philosophy-theology.png'
+      id: "philosophy-theology",
+      name: "Філософсько-Богословський",
+      slug: "philosophy-theology",
+      img: "images/faculties/philosophy-theology.jpg",
     },
     {
-      id: 'applied-sciences',
-      name: 'Прикладних Наук',
-      slug: 'applied-sciences'
+      id: "applied-sciences",
+      name: "Прикладних Наук",
+      slug: "applied-sciences",
+      img: "images/faculties/applied-sciences.jpg",
     },
     {
-      id: 'health-sciences',
-      name: 'Наук про Здоров\'я',
-      slug: 'health-sciences'
+      id: "health-sciences",
+      name: "Наук про Здоров'я",
+      slug: "health-sciences",
+      img: "images/faculties/health-sciences.jpg",
     },
     {
-      id: 'social-sciences',
-      name: 'Суспільних Наук',
-      slug: 'social-sciences'
+      id: "social-sciences",
+      name: "Суспільних Наук",
+      slug: "social-sciences",
+      img: "images/faculties/social-sciences.jpg",
     },
     {
-      id: 'humanities',
-      name: 'Гуманітарний Факультет',
-      slug: 'humanities'
+      id: "humanities",
+      name: "Гуманітарний",
+      slug: "humanities",
+      img: "images/faculties/humanities.jpg",
     },
     {
-      id: 'law',
-      name: 'Факультет Права',
-      slug: 'law'
-    }
+      id: "law",
+      name: "Факультет Права",
+      slug: "law",
+      img: "images/faculties/law.jpg",
+    },
+    {
+      id: "business-school",
+      name: "Бізнес-школа",
+      slug: "business-school",
+      img: "images/faculties/business-school.jpg",
+    },
   ];
 
   return (
@@ -53,8 +64,13 @@ export default function FacultiesPage() {
               key={faculty.id}
               title={faculty.name}
               href={`/voting/faculty/${faculty.slug}`}
-              image="placeholder"
-            />
+            >
+              <img
+                src={faculty.img}
+                alt=""
+                className="w-full h-40 object-cover rounded-lg mb-3"
+              />
+            </VotingCard>
           ))}
         </div>
       </div>
