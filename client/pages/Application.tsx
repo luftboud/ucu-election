@@ -41,7 +41,8 @@ export default function Application() {
           <img
             className="h-24 mx-auto mb-8"
             src="images/application-ended.webp"
-            alt="a cat looking" />
+            alt="a cat looking"
+          />
 
           {/* Applications open */}
 
@@ -110,7 +111,7 @@ export default function Application() {
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div
-                  className={`flex items-center gap-6 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                  className={`flex items-center gap-6 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} flex-col`}
                 >
                   {/* Icon placeholder */}
                   <div className="w-24 h-24 rounded-lg flex items-center justify-center flex-shrink-0">
