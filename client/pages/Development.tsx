@@ -20,7 +20,7 @@ export default function Development() {
           Ця сторінка поки недоступна
         </p>
         <p className="text-xs text-black/50 font-medium">
-          Очікуйте кінця подачі заявок 9 вересня!
+          Очікуйте кінця етапу 4 вересня !
         </p>
       </div>
     </div>
