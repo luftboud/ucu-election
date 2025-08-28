@@ -14,27 +14,22 @@ export default function Footer() {
               className="text-xs text-gray-300"
               target="_blank"
             >
-              Сподобалась система голосування? Тоді надішліть кілька гривень,
-              щоб купити кавусі для команди
+              Сподобалась система голосування? Тоді <b>надішліть кілька гривень,</b> щоб купити кавусі для команди
             </a>
           </div>
 
           <div className="flex space-x-4 items-center">
-            {/* СВК Icon Placeholder */}
-            <div className="flex flex-col items-center">
-              <div className="w-10 h-10 bg-ivory rounded-lg flex items-center justify-center mb-1">
-                <span className="text-dark-blue font-bold text-xs">СВК</span>
-              </div>
-              <span className="text-xs">СВК</span>
-            </div>
-
-            {/* РС УКУ Icon Placeholder */}
-            <div className="flex flex-col items-center">
-              <div className="w-10 h-10 bg-ivory rounded-lg flex items-center justify-center mb-1">
-                <span className="text-dark-blue font-bold text-xs">РС</span>
-              </div>
-              <span className="text-xs">РС УКУ</span>
-            </div>
+            <img src="images/logo_svk.png" alt="logo СВК" className="h-10" />
+            <a
+              href="https://www.instagram.com/stcouncilucu?igsh=MWkwYzU3MGRieXhkMw=="
+              target="_blank"
+            >
+              <img
+                src="images/logo_scouncil.png"
+                alt="logo student council"
+                className="h-16"
+              />
+            </a>
           </div>
         </div>
       </div>
