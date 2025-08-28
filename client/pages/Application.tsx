@@ -8,18 +8,20 @@ export default function Application() {
     {
       title: "Що таке Рада Студентів?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
+        "Рада студентів УКУ – це вищий представницький орган студентського самоврядування, який відповідає за всі академічні питання студентства. Рада представляє інтереси студентів, захищає їхні права в освітній сфері та співпрацює з адміністрацією, задля вирішення важливих академічних питань.",
       img: "images/scouncil.png",
     },
     {
       title: "Як бути представником?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
+        "Представники академічних груп – це обрані студенти, які представляють інтереси своєї групи в Раді студентів. Вони є посередниками між студентами та викладачами, допомагають доносити думку спільноти, слідкують за академічними питаннями й дбають про комфорт навчального процесу. Представники мають право голосу на засіданнях Ради і є вирішальною ланкою у вирішенні питань, що стосуються студентського життя.",
+      img: "images/repr.PNG",
     },
     {
       title: "Хто такі СВК?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc dignissim, facilisis ligula at, tempor magna. Sed hendrerit consectetur lorem, eu cursus mi volutpat vel.",
+        "Студентська виборча комісія - це команда тих, хто відповідає за чесність та прозорість виборів у студентській спільноті. Ми організовуємо процес голосування, стежимо за дотриманням правил і гарантуємо рівні можливості для всіх кандидатів і кандидаток . Наша місія - зробити вибори зрозумілими, відкритими та справедливими. Ми працюємо для того, щоб кожен голос мав вплив.",
+      img: "images/svk.png",
     },
   ];
 
@@ -28,9 +30,22 @@ export default function Application() {
       {/* Section 1: Top section with dark blue background */}
       <section className="bg-dark-blue text-ivory h-screen px-4 flex items-center">
         <div className="container mx-auto text-center">
-          {/* Applications open */}
+          {/* before application */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
+            Очікуйте на початок подачі!
+          </h1>
+          <p className="text-lg text-ivory/80 mb-12 font-medium">
+            Початок: четвер, 4 вересня
+          </p>
+          <img
+            className="h-24 mx-auto mb-8"
+            src="images/application-ended.webp"
+            alt="a cat looking" />
+
+          {/* Applications open */}
+
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
@@ -41,7 +56,7 @@ export default function Application() {
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Податись
-          </button>
+          </button> */}
 
           {/* Applications closed */}
 
@@ -98,11 +113,11 @@ export default function Application() {
                   className={`flex items-center gap-6 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
                 >
                   {/* Icon placeholder */}
-                  <div className="w-20 h-20  rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-24 h-24 rounded-lg flex items-center justify-center flex-shrink-0">
                     <img
                       src={block.img}
                       alt={block.title}
-                      className="w-20 h-24 object-cover"
+                      className="w-22 h-24 object-cover"
                     ></img>
                   </div>
 
