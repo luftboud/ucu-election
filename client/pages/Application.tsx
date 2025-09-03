@@ -1,7 +1,7 @@
 export default function Application() {
   const handleApplyClick = () => {
     // Placeholder for Google Form link
-    window.open("https://forms.gle/H2o1bjvFe8i7JsBB8", "_blank");
+    window.open("https://forms.gle/o2PpjRmFFdREcQxV7", "_blank");
   };
 
   const infoBlocks = [
@@ -50,7 +50,7 @@ export default function Application() {
             Триває подача на представників!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Кінцевий термін: 8 вересня 23:59
+            Кінцевий термін: 7 вересня 18:00
           </p>
           <button
             onClick={handleApplyClick}
@@ -65,7 +65,7 @@ export default function Application() {
             Очікуйте на голосування!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Початок: середа, 10 вересня
+            Початок: вересень, 9 вересня
           </p>
           <img
             className="h-24 mx-auto mb-8"
