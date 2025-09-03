@@ -32,7 +32,7 @@ export default function Application() {
         <div className="container mx-auto text-center">
           {/* before application */}
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Очікуйте на початок подачі!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
@@ -42,11 +42,11 @@ export default function Application() {
             className="h-24 mx-auto mb-8"
             src="images/application-ended.webp"
             alt="a cat looking"
-          />
+          /> */}
 
           {/* Applications open */}
 
-          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
@@ -57,7 +57,7 @@ export default function Application() {
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Податись
-          </button> */}
+          </button>
 
           {/* Applications closed */}
 
