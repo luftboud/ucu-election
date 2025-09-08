@@ -1,22 +1,41 @@
 import { X } from "lucide-react";
 import { VotingCandidate } from "../data/candidates.ts";
 
+const specialtyLink = {
+  "богословя-(бакалаврат)": "https://forms.gle/i3LrNHb4aSbJXp8g6",
+  "компютерні-науки": "#",
+  "it-%26-da": "#",
+  робототехніка: "#",
+  "соціальна-робота": "#",
+  психологія: "#",
+  "етика-політика-економіка": "#",
+  соціологія: "#",
+  історія: "#",
+  філологія: "#",
+  культурологія: "#",
+  право: "#",
+};
+const fallbackLink = "#";
+
 interface CandidateModalProps {
   candidate: VotingCandidate | null;
   isOpen: boolean;
   onClose: () => void;
+  specialtyId: string;
 }
 
 export default function CandidateModal({
   candidate,
   isOpen,
   onClose,
+  specialtyId
 }: CandidateModalProps) {
   if (!isOpen || !candidate) return null;
 
   const handleFormSubmit = () => {
-    // Placeholder for Google Form link
-    window.open("#", "_blank");
+    const link = specialtyLink[specialtyId] ?? fallbackLink;
+    console.log(specialtyLink);
+    window.open(link, "_blank");
   };
 
   return (
@@ -43,18 +62,41 @@ export default function CandidateModal({
         {/* Content */}
         <div className="p-6">
           {/* Photo placeholder */}
-          <div className="w-48 h-48 bg-gray-200 rounded-lg mx-auto mb-6 flex items-center justify-center">
-            {/* <span className="text-gray-400">Фото кандидата</span> */}
-            <img src={candidate.image} alt={candidate.name} className="w-full h-full object-cover rounded-lg" />
+          <div className="mx-auto mb-6 flex items-center justify-center">
+            <img
+              src={candidate.image}
+              alt={candidate.name}
+              className="h-[300px] rounded-lg object-cover"
+            />
           </div>
 
           {/* Description */}
+          {candidate.shortDescription && (
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold mb-4 text-black">
+                Про кандидата
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {candidate.shortDescription.split("\n").map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4 text-black">
-              Про кандидата
+              Мотивація кандидата
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              {candidate.description}
+              {candidate.description.split("\n").map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
+              ))}
             </p>
           </div>
 

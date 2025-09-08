@@ -12,38 +12,38 @@ export default function FacultiesPage() {
       id: "applied-sciences",
       name: "Прикладних Наук",
       slug: "applied-sciences",
-      img: "images/faculties/applied-sciences.jpg",
+      img: "images/faculties/applied-sciences.png",
     },
     {
       id: "health-sciences",
       name: "Наук про Здоров'я",
       slug: "health-sciences",
-      img: "images/faculties/health-sciences.jpg",
+      img: "images/faculties/health-sciences.png",
     },
     {
       id: "social-sciences",
       name: "Суспільних Наук",
       slug: "social-sciences",
-      img: "images/faculties/social-sciences.jpg",
+      img: "images/faculties/social-sciences.png",
     },
     {
       id: "humanities",
       name: "Гуманітарний",
       slug: "humanities",
-      img: "images/faculties/humanities.jpg",
+      img: "images/faculties/humanities.png",
     },
     {
       id: "law",
       name: "Факультет Права",
       slug: "law",
-      img: "images/faculties/law.jpg",
+      img: "images/faculties/law.png",
     },
-    {
-      id: "business-school",
-      name: "Бізнес-школа",
-      slug: "business-school",
-      img: "images/faculties/business-school.jpg",
-    },
+    // {
+    //   id: "business-school",
+    //   name: "Бізнес-школа",
+    //   slug: "business-school",
+    //   img: "images/faculties/business-school.png",
+    // },
   ];
 
   return (
@@ -68,7 +68,7 @@ export default function FacultiesPage() {
               <img
                 src={faculty.img}
                 alt=""
-                className="w-full h-40 object-cover rounded-lg mb-3"
+                className="w-full h-40 object-contain rounded-lg mb-3"
               />
             </VotingCard>
           ))}

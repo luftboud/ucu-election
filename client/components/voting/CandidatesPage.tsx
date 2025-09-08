@@ -47,7 +47,7 @@ export default function CandidatesPage() {
     "етика-політика-економіка": "#",
     соціологія: "#",
     історія: "#",
-    філологія: "#",
+    філологія: "https://forms.gle/i3LrNHb4aSbJXp8g6",
     культурологія: "#",
     право: "#",
   };
@@ -104,7 +104,7 @@ export default function CandidatesPage() {
                   key={candidate.id}
                   title={candidate.name}
                   image={candidate.image}
-                  subtitle="Кандидат"
+                  description={candidate.shortDescription || candidate.description}
                   onClick={() => handleCandidateClick(candidate)}
                 >
                   {/* <div className="mt-3">
@@ -151,6 +151,7 @@ export default function CandidatesPage() {
           candidate={selectedCandidate}
           isOpen={isModalOpen}
           onClose={handleCloseModal}
+          specialtyId={specialtyId}
         />
       </div>
     </div>
