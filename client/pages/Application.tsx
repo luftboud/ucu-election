@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Application() {
   const handleApplyClick = () => {
     // Placeholder for Google Form link
@@ -62,15 +63,23 @@ export default function Application() {
           {/* Applications closed */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Очікуйте на голосування!
+            Триває голосування!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Початок: 9 вересня, 9:00
+            Кінець голосування: 9 вересня, 18:00
           </p>
           <img
             className="h-24 mx-auto mb-8"
             src="images/application-ended.webp"
-            alt="a cat looking" />
+            alt="a cat looking"
+          />
+          <Link to={`/voting`}>
+            <button
+              className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              Голосувати
+            </button>
+          </Link>
         </div>
         {/* Scroll Down Button */}
         <div className="absolute bottom-[11%] left-0 right-0 flex justify-center">
