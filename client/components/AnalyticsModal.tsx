@@ -103,15 +103,24 @@ export default function AnalyticsModal({
         </div>
 
         {/* Content */}
-        <div className="p-8">
+        <div className="p-8 md:px-16 flex flex-col md:flex-row justify-between items-center">
           {/* Representative Info */}
-          <div className="text-center mb-8">
-            <h3 className="text-xl font-bold text-black mb-2">
-              {representative.name}
-            </h3>
-            <p className="text-gray-700">
-              {representative.specialty}, {representative.course} курс
-            </p>
+          <div>
+            <div className="mx-auto mb-6 flex items-center justify-center">
+              <img
+                src={representative.photo}
+                alt={representative.name}
+                className="h-[300px] rounded-lg object-cover"
+              />
+            </div>
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-bold text-black mb-2">
+                {representative.name}
+              </h3>
+              <p className="text-gray-700">
+                {representative.specialty}, {representative.course} курс
+              </p>
+            </div>
           </div>
 
           {/* Chart and Legend Section */}
