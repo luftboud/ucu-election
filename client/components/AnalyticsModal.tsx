@@ -32,7 +32,10 @@ export default function AnalyticsModal({
     representative.votingData.candidates.map((candidate, index) => ({
       name: candidate.name,
       votes: candidate.votes,
-      percentage: Math.round((candidate.votes / totalVotes) * 100),
+      percentage:
+        totalVotes === 0
+          ? 100
+          : Math.round((candidate.votes / totalVotes) * 100),
       isWinner: index === 0, // First candidate in the array is the winner
     }));
 
@@ -47,6 +50,9 @@ export default function AnalyticsModal({
 
   // Simple pie chart calculation
   const createPieChart = () => {
+    if (candidates.length === 1 && candidates[0].percentage === 100) {
+      return []; // нічого не малюємо
+    }
     let currentAngle = 0;
     return candidates.map((candidate, index) => {
       const angle = (candidate.percentage / 100) * 360;
@@ -126,25 +132,26 @@ export default function AnalyticsModal({
           {/* Chart and Legend Section */}
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 justify-center">
             {/* Pie Chart */}
-            <div className="flex-shrink-0">
-              <svg
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
-                className="drop-shadow-sm"
-              >
-                {pieSlices.map((slice, index) => (
-                  <path
-                    key={index}
-                    d={slice.path}
-                    fill={slice.color}
-                    stroke="white"
-                    strokeWidth="2"
-                  />
-                ))}
-              </svg>
-            </div>
-
+            {pieSlices.length > 0 && (
+              <div className="flex-shrink-0">
+                <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  className="drop-shadow-sm"
+                >
+                  {pieSlices.map((slice, index) => (
+                    <path
+                      key={index}
+                      d={slice.path}
+                      fill={slice.color}
+                      stroke="white"
+                      strokeWidth="2"
+                    />
+                  ))}
+                </svg>
+              </div>
+            )}
             {/* Legend */}
             <div className="space-y-4 min-w-[250px]">
               <h4 className="text-lg font-semibold text-black mb-4">
