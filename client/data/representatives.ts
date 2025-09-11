@@ -514,7 +514,7 @@ export const electedRepresentatives: Faculty[] = [
 	name: 'Пелиньо Валентина', 
 	specialty: "Богослов'я", 
 	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1SsGim-QeTwu7LigFCveEVPtSdiYQZYk8', 
+	photo: 'https://lh3.googleusercontent.com/d/1XMAJjiLQNiVvzgKmefW8SBgoWhBAkKok', 
 	votingData: {
 		candidates: [
 			{ name: "Пелиньо Валентина", votes: 5},
