@@ -63,14 +63,14 @@ export default function Application() {
           {/* Applications closed */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Очікуйте на результати!
+            Вітаємо 5 скликання Ради студентів УКУ!
           </h1>
-          <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Публікація результатів: 10 вересня, 10:00
+          <p className="text-lg text-ivory/80 mb-8 font-medium">
+            Наступне голосування чекайте в 2026 :)
           </p>
           <img
-            className="h-24 mx-auto mb-8"
-            src="images/application-ended.webp"
+            className="h-40 mx-auto mb-8"
+            src="images/cat_glasses.png"
             alt="a cat looking"
           />
           {/* <Link to={`/voting`}>
