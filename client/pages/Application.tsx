@@ -82,7 +82,7 @@ export default function Application() {
           </Link> */}
         </div>
         {/* Scroll Down Button */}
-        <div className="absolute bottom-[11%] left-0 right-0 flex justify-center">
+        <div className="absolute bottom-[5%] left-0 right-0 flex justify-center">
           <button
             onClick={() => {
               const nextSection = document.querySelector(
