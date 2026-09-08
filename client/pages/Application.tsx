@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function Application() {
   const handleApplyClick = () => {
     // Placeholder for Google Form link
-    window.open("https://forms.gle/o2PpjRmFFdREcQxV7", "_blank");
+    window.open("https://forms.gle/NmtMzRX6pExdydpg8", "_blank");
   };
 
   const infoBlocks = [
@@ -47,22 +47,22 @@ export default function Application() {
 
           {/* Applications open */}
 
-          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Триває подача на представників!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Кінцевий термін: 7 вересня 18:00
+            Кінцевий термін: 12 вересня 23:59
           </p>
           <button
             onClick={handleApplyClick}
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Податись
-          </button> */}
+          </button>
 
           {/* Applications closed */}
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Вітаємо 5 скликання Ради студентів УКУ!
           </h1>
           <p className="text-lg text-ivory/80 mb-8 font-medium">
@@ -72,7 +72,7 @@ export default function Application() {
             className="h-40 mx-auto mb-8"
             src="images/cat_glasses.png"
             alt="a cat looking"
-          />
+          /> */}
           {/* <Link to={`/voting`}>
             <button
               className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
