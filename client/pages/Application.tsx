@@ -48,17 +48,22 @@ export default function Application() {
           {/* Applications open */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Триває подача на представників!
+            Подача завершена!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Кінцевий термін: 12 вересня 23:59
+            Чекайте на голосування
           </p>
-          <button
+          <img
+            className="h-40 mx-auto mb-8"
+            src="images/cat_glasses.png"
+            alt="a cat looking"
+          />
+          {/* <button
             onClick={handleApplyClick}
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             Податись
-          </button>
+          </button> */}
 
           {/* Applications closed */}
 
@@ -86,7 +91,7 @@ export default function Application() {
           <button
             onClick={() => {
               const nextSection = document.querySelector(
-                "section:nth-of-type(2)"
+                "section:nth-of-type(2)",
               );
               nextSection?.scrollIntoView({ behavior: "smooth" });
             }}
