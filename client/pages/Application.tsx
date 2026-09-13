@@ -48,10 +48,10 @@ export default function Application() {
           {/* Applications open */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Подача завершена!
+            Триває голосування!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Чекайте на голосування
+            Голосуйте за свого кандидата до !
           </p>
           <img
             className="h-40 mx-auto mb-8"
@@ -68,7 +68,7 @@ export default function Application() {
           {/* Applications closed */}
 
           {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Вітаємо 5 скликання Ради студентів УКУ!
+            Вітаємо 6 скликання Ради студентів УКУ!
           </h1>
           <p className="text-lg text-ivory/80 mb-8 font-medium">
             Наступне голосування чекайте в 2026 :)

@@ -38,12 +38,12 @@ export default function FacultiesPage() {
       slug: "law",
       img: "images/faculties/law.png",
     },
-    // {
-    //   id: "business-school",
-    //   name: "Бізнес-школа",
-    //   slug: "business-school",
-    //   img: "images/faculties/business-school.png",
-    // },
+    {
+      id: "business-school",
+      name: "Бізнес-школа",
+      slug: "business-school",
+      img: "images/faculties/business-school.png",
+    },
   ];
 
   return (

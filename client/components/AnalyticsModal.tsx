@@ -117,6 +117,7 @@ export default function AnalyticsModal({
                 src={representative.photo}
                 alt={representative.name}
                 className="h-[300px] rounded-lg object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div className="text-center mb-8">

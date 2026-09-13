@@ -72,6 +72,7 @@ export default function CandidateModal({
               src={candidate.image}
               alt={candidate.name}
               className="h-[300px] rounded-lg object-cover"
+              referrerPolicy="no-referrer"
             />
           </div>
 
@@ -91,19 +92,21 @@ export default function CandidateModal({
               </p>
             </div>
           )}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold mb-4 text-black">
-              Мотивація кандидата
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              {candidate.description.split("\n").map((line, index) => (
-                <span key={index}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-            </p>
-          </div>
+          {candidate.description && (
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold mb-4 text-black">
+                Мотивація кандидата
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {candidate.description.split("\n").map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
+              </p>
+            </div>
+          )}
 
           {/* Action button */}
           <div className="text-center">
