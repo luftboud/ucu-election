@@ -51,7 +51,7 @@ export default function Application() {
             Триває голосування!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Голосуйте за свого кандидата до !
+            Голосуйте за свого кандидата!
           </p>
           <img
             className="h-40 mx-auto mb-8"
