@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import VotingCard from "../VotingCard";
-import CandidateModal from "../CandidateModal";
+import CandidateModal, { getSpecialtyFormLink } from "../CandidateModal";
 import {
   getCandidatesForPosition,
   VotingCandidate,
@@ -37,28 +37,6 @@ export default function CandidatesPage() {
     course
   );
 
-  const specialtyLink = {
-    "богослов'я": "https://forms.gle/MgEcTweyRWt1aLnx8",
-    "комп'ютерні науки": "https://forms.gle/UvLsE27o2Awz5v6o6",
-    "іт та аналітика рішень": "https://forms.gle/HWUD3a8cYJ62fLQe8",
-    робототехніка: "https://forms.gle/uG9X2YyVENxJ3Lpi9",
-    "соціальна робота": "https://forms.gle/iP5S5GSm4bj3MirN6",
-    психологія: "https://forms.gle/BWfmgEHcpecNmjyx6",
-    "етика-політика-економіка": "https://forms.gle/Y3JrEnw5YfGdsQCu9",
-    соціологія: "https://forms.gle/x2B9cETvYfBbjKSW6",
-    історія: "https://forms.gle/1FeQh6tKQSM3ubqg7",
-    філологія: "https://forms.gle/kqNLezfhiqvGzVFU8",
-    культурологія: "https://forms.gle/Yh7kn6MmxZJSxa8bA",
-    право: "https://forms.gle/H86rDagJJVzXtDr4A",
-    "право (магістратура)": "https://forms.gle/hmzgCVrg8nArqKZ78",
-    журналістика: "https://forms.gle/tREPGKjoeEt8Vbzx7",
-    "публічне управління та адміністрування":
-      "https://forms.gle/PJvfJ9NzK9wUSi7f7",
-    "християнська педагогіка": "https://forms.gle/fAgw3sw7sqLFUmbx9",
-    "майбутнє спадщини": "https://forms.gle/849VkLpPwzNE8REUA",
-  };
-  const fallbackLink = "#";
-
   const handleCandidateClick = (candidate: VotingCandidate) => {
     setSelectedCandidate(candidate);
     setIsModalOpen(true);
@@ -70,9 +48,7 @@ export default function CandidatesPage() {
   };
 
   const handleFinalSubmit = () => {
-    // Placeholder for Google Form link
-    const link = specialtyLink[specialtyId] ?? fallbackLink;
-    window.open(link, "_blank");
+    window.open(getSpecialtyFormLink(specialtyId), "_blank");
   };
 
   return (

@@ -1,33 +1,45 @@
 import { X } from "lucide-react";
 import { VotingCandidate } from "../data/candidates.ts";
 
-const specialtyLink = {
-  "богослов'я": "https://forms.gle/MgEcTweyRWt1aLnx8",
-  "комп'ютерні науки": "https://forms.gle/UvLsE27o2Awz5v6o6",
-  "іт та аналітика рішень": "https://forms.gle/HWUD3a8cYJ62fLQe8",
-  робототехніка: "https://forms.gle/uG9X2YyVENxJ3Lpi9",
-  "соціальна робота": "https://forms.gle/iP5S5GSm4bj3MirN6",
-  психологія: "https://forms.gle/BWfmgEHcpecNmjyx6",
-  "етика-політика-економіка": "https://forms.gle/Y3JrEnw5YfGdsQCu9",
-  соціологія: "https://forms.gle/x2B9cETvYfBbjKSW6",
-  історія: "https://forms.gle/1FeQh6tKQSM3ubqg7",
-  філологія: "https://forms.gle/kqNLezfhiqvGzVFU8",
-  культурологія: "https://forms.gle/Yh7kn6MmxZJSxa8bA",
-  право: "https://forms.gle/H86rDagJJVzXtDr4A",
-  "право (магістратура)": "https://forms.gle/hmzgCVrg8nArqKZ78",
-  журналістика: "https://forms.gle/tREPGKjoeEt8Vbzx7",
-  "публічне управління та адміністрування":
-    "https://forms.gle/PJvfJ9NzK9wUSi7f7",
-  "християнська педагогіка": "https://forms.gle/fAgw3sw7sqLFUmbx9",
-  "майбутнє спадщини": "https://forms.gle/849VkLpPwzNE8REUA",
+const specialtyLink: Record<string, string> = {
+  "богослов'я": "https://docs.google.com/forms/d/e/1FAIpQLSf60wDso7-R3fYaD9oxEosiRwJsjEABirhV2KAs-gYkhMhd2w/viewform?usp=publish-editor",
+  "християнська педагогіка": "https://docs.google.com/forms/d/e/1FAIpQLSfVDijJ-e-rUKM5rcsSrAHT00PZI39aU115ZWqZLs5Tm1lADw/viewform?usp=publish-editor",
+  філологія: "https://docs.google.com/forms/d/e/1FAIpQLSe8bITslIH71ipVf7VqHVS6z-71i0NBzW1PI48J8An-7yM0nA/viewform?usp=publish-editor",
+  історія: "https://docs.google.com/forms/d/e/1FAIpQLSeObcjvG_ZXGr4Kj9QMIJ1kkGiVvUCCzaEQUUziY7fQiGnZGg/viewform?usp=publish-editor",
+  культурологія: "https://docs.google.com/forms/d/e/1FAIpQLSduXbVFchjz68Qwhruj9kGU3_3Aivb1afdU_bRzp0DUP7CvWQ/viewform?usp=publish-editor",
+  "майбутнє спадщини": "https://docs.google.com/forms/d/e/1FAIpQLSfKKOWVnUGTstuvoEAvUO8p-uvn9i_wmOlMvVaohhp8lp8vXg/viewform?usp=publish-editor",
+  "етика-політика-економіка": "https://docs.google.com/forms/d/e/1FAIpQLSd_5CdJmOtkEXLGuYF13d-uRJkD3tlwkbIjWQHlqs9ZCgWMRQ/viewform?usp=publish-editor",
+  соціологія: "https://docs.google.com/forms/d/e/1FAIpQLSf4njxSvBRqp5etSng94H8-csTnonhXGAclDaMWg1BBZGOvRg/viewform?usp=publish-editor",
+  "публічне управління та адміністрування": "https://docs.google.com/forms/d/e/1FAIpQLScsflvr63AipSnCav4fIvtvLQnx9VGJKj_DDU2rQltg9uN9eQ/viewform?usp=publish-editor",
+  "соціальна робота": "https://docs.google.com/forms/d/e/1FAIpQLSfZXQ5NToUkm__sVJTkGybg50kTpL4246luItXw3mtDgPf6Gg/viewform?usp=publish-editor",
+  психологія: "https://docs.google.com/forms/d/e/1FAIpQLSdHdGVNtrJVsJCh7PopnD6DVa2EjV4tOyV1TzSi1iY9CVZpSg/viewform?usp=publish-editor",
+  "клінічна психологія (психодинамічна терапія)": "https://docs.google.com/forms/d/e/1FAIpQLScr_6ai1HRW-hjVf0lmotIXVfnN1Ge_Srzaib4qNxhty0lljg/viewform?usp=publish-editor",
+  "комп'ютерні науки": "https://docs.google.com/forms/d/e/1FAIpQLSeFQwhl6KYZswYoOgwq2yWgnqGHl6cfriAt5ENm-S4Wh8IpDA/viewform?usp=publish-editor",
+  "іт та аналітика рішень": "https://docs.google.com/forms/d/e/1FAIpQLSf9vpCnahycBOy8NWQ4rX4EZyNNqVjr1_5p4X23jOmBaII5Zg/viewform?usp=publish-editor",
+  робототехніка: "https://docs.google.com/forms/d/e/1FAIpQLSdydIg7Y9f-dq-ZjWlPzr2MhXq-akwr3g19kMR_e9ClhoJm_w/viewform?usp=publish-editor",
+  право: "https://docs.google.com/forms/d/e/1FAIpQLSezS-LnYP7kWxsV8op3suiX0Fs8UhAQNHNYQp1Um4-IyAkepQ/viewform?usp=publish-editor",
+  "право (магістратура)": "https://docs.google.com/forms/d/e/1FAIpQLSd1WKzLp3s25Coc-z801CKI6yowqUrXKTlANdi2ZNL3AwjJ8A/viewform?usp=publish-editor",
+  "менеджмент маркетингової діяльності": "https://docs.google.com/forms/d/e/1FAIpQLScyjq_ZmsBK0Em7WjxyInBBeTVsm4kBU0t16lTwEq5CAoh_UA/viewform?usp=dialog",
+  "управління організаціями які впливають": "https://docs.google.com/forms/d/e/1FAIpQLSeUPt9lWsXE3PXhcyVM6Qu1Ul5RGr1OtxqeAjNuTrbb5VHL_A/viewform?usp=publish-editor",
 };
 const fallbackLink = "#";
+
+export function getSpecialtyFormLink(specialtyId?: string) {
+  if (!specialtyId) return fallbackLink;
+  let key = specialtyId;
+  try {
+    key = decodeURIComponent(specialtyId);
+  } catch {
+    key = specialtyId;
+  }
+  return specialtyLink[key] ?? specialtyLink[specialtyId] ?? fallbackLink;
+}
 
 interface CandidateModalProps {
   candidate: VotingCandidate | null;
   isOpen: boolean;
   onClose: () => void;
-  specialtyId: string;
+  specialtyId?: string;
 }
 
 export default function CandidateModal({
@@ -39,8 +51,7 @@ export default function CandidateModal({
   if (!isOpen || !candidate) return null;
 
   const handleFormSubmit = () => {
-    const link = specialtyLink[specialtyId] ?? fallbackLink;
-    window.open(link, "_blank");
+    window.open(getSpecialtyFormLink(specialtyId), "_blank");
   };
 
   return (
