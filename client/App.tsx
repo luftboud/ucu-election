@@ -34,7 +34,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Application />} />
-            <Route path="/voting/*" element={<Voting />} />
+            <Route path="/voting/*" element={<Development />} />
             <Route path="/results" element={<Development />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

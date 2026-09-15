@@ -48,10 +48,10 @@ export default function Application() {
           {/* Applications open */}
 
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Триває голосування!
+            Голосування завершено!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
-            Голосуйте за свого кандидата!
+            Очікуйте на публікацію результатів.
           </p>
           <img
             className="h-40 mx-auto mb-8"
