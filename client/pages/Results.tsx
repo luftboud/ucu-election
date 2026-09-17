@@ -36,6 +36,7 @@ export default function Results() {
     "applied-sciences": "#5a027d",
     law: "#bd0413",
     "philosophy-theology": "#660109",
+    "business-school": "#0f6b8a",
   };
   // Create faculty list for filter bar
   const faculties = electedRepresentatives.map((faculty) => ({

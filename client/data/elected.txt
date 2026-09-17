@@ -1,0 +1,448 @@
+{
+	id: 'sabadakh-roman-vibori-predstavnika-it-ta-analitiki-rishen-2026-responses-form-responses-1-1',
+	name: 'Сабадах Роман',
+	specialty: 'Вибори представника ІТ та аналітики рішень 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Сабадах Роман', votes: 9 },
+			{ name: 'Бондаренко Владислава', votes: 7 },
+		]
+	}
+},
+{
+	id: 'lem-anastasiia-vibori-predstavnika-it-ta-analitiki-rishen-2026-responses-form-responses-1-2',
+	name: 'Лем Анастасія',
+	specialty: 'Вибори представника ІТ та аналітики рішень 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Лем Анастасія', votes: 3 },
+		]
+	}
+},
+{
+	id: 'dovzhenko-rostislav-vibori-predstavnika-istoriyi-2026-responses-form-responses-1-1',
+	name: 'Довженко Ростислав',
+	specialty: 'Вибори представника Історії 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Довженко Ростислав', votes: 8 },
+			{ name: 'Шумейко Михайло', votes: 1 },
+		]
+	}
+},
+{
+	id: 'tsarelunga-anna-vibori-predstavnika-istoriyi-2026-responses-form-responses-1-2',
+	name: 'Царелунга Анна',
+	specialty: 'Вибори представника Історії 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Царелунга Анна', votes: 13 },
+		]
+	}
+},
+{
+	id: 'chub-illia-vibori-predstavnika-istoriyi-2026-responses-form-responses-1-3',
+	name: 'Чуб Ілля',
+	specialty: 'Вибори представника Історії 2026! (Responses) - Form Responses 1',
+	course: 3,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Чуб Ілля', votes: 3 },
+		]
+	}
+},
+{
+	id: 'stemkovs-kii-marko-vibori-predstavnika-istoriyi-2026-responses-form-responses-1-4',
+	name: 'Стемковський Марко',
+	specialty: 'Вибори представника Історії 2026! (Responses) - Form Responses 1',
+	course: 4,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Стемковський Марко', votes: 2 },
+		]
+	}
+},
+{
+	id: 'korotushak-sofiia-vibori-predstavnika-bogoslov-ia-2026-responses-form-responses-1-1',
+	name: 'Коротушак Софія',
+	specialty: 'Вибори представника Богословʼя 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Коротушак Софія', votes: 1 },
+		]
+	}
+},
+{
+	id: 'smetana-iuliana-vibori-predstavnika-epe-2026-responses-form-responses-1-1',
+	name: 'Сметана Юліана',
+	specialty: 'Вибори представника ЕПЕ 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Сметана Юліана', votes: 23 },
+			{ name: 'Григоровський Юрій', votes: 10 },
+			{ name: 'Камілла Монастирська', votes: 6 },
+			{ name: 'Петрова Вікторія', votes: 3 },
+			{ name: 'Козак Маркіян', votes: 1 },
+		]
+	}
+},
+{
+	id: 'il-chishin-viktoriia-vibori-predstavnika-epe-2026-responses-form-responses-1-2',
+	name: 'Ільчишин Вікторія',
+	specialty: 'Вибори представника ЕПЕ 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Ільчишин Вікторія', votes: 11 },
+		]
+	}
+},
+{
+	id: 'german-ol-ga-vibori-predstavnika-epe-2026-responses-form-responses-1-4',
+	name: 'Герман Ольга',
+	specialty: 'Вибори представника ЕПЕ 2026! (Responses) - Form Responses 1',
+	course: 4,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Герман Ольга', votes: 7 },
+		]
+	}
+},
+{
+	id: 'koval-anastasiia-vibori-predstavnika-klinichna-psikhologiia-psikhodinamichna-terapiia-2026-responses-form-responses-1-1',
+	name: 'Коваль Анастасія',
+	specialty: 'Вибори представника Клінічна психологія (психодинамічна терапія) 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Коваль Анастасія', votes: 2 },
+		]
+	}
+},
+{
+	id: 'knish-sofiia-vibori-predstavnika-komp-iuternikh-nauk-2026-responses-form-responses-1-1',
+	name: 'Книш Софія',
+	specialty: 'Вибори представника Компʼютерних наук 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Книш Софія', votes: 12 },
+			{ name: 'Гридова Катерина', votes: 6 },
+		]
+	}
+},
+{
+	id: 'shimushovs-ka-khristina-vibori-predstavnika-komp-iuternikh-nauk-2026-responses-form-responses-1-2',
+	name: 'Шимушовська Христина',
+	specialty: 'Вибори представника Компʼютерних наук 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Шимушовська Христина', votes: 6 },
+		]
+	}
+},
+{
+	id: 'magarita-iia-vibori-predstavnika-komp-iuternikh-nauk-2026-responses-form-responses-1-3',
+	name: 'Магарита Ія',
+	specialty: 'Вибори представника Компʼютерних наук 2026! (Responses) - Form Responses 1',
+	course: 3,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Магарита Ія', votes: 6 },
+		]
+	}
+},
+{
+	id: 'siniuta-uliana-vibori-predstavnika-kul-turologiyi-2026-responses-form-responses-1-1',
+	name: 'Синюта Уляна',
+	specialty: 'Вибори представника Культурології 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Синюта Уляна', votes: 9 },
+			{ name: 'Фомінська Тетяна', votes: 4 },
+		]
+	}
+},
+{
+	id: 'kaleniuk-iarina-vibori-predstavnika-kul-turologiyi-2026-responses-form-responses-1-2',
+	name: 'Каленюк Ярина',
+	specialty: 'Вибори представника Культурології 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Каленюк Ярина', votes: 2 },
+		]
+	}
+},
+{
+	id: 'govorun-valeriia-vibori-predstavnika-kul-turologiyi-2026-responses-form-responses-1-4',
+	name: 'Говорун Валерія',
+	specialty: 'Вибори представника Культурології 2026! (Responses) - Form Responses 1',
+	course: 4,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Говорун Валерія', votes: 4 },
+		]
+	}
+},
+{
+	id: 'muzika-bogdana-vibori-predstavnika-maibutnie-spadshchini-2026-responses-form-responses-1-1',
+	name: 'Музика Богдана',
+	specialty: 'Вибори представника Майбутнє спадщини 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Музика Богдана', votes: 11 },
+		]
+	}
+},
+{
+	id: 'diakiv-vlada-vibori-predstavnika-psikhologiyi-2026-responses-form-responses-1-3',
+	name: 'Дяків Влада',
+	specialty: 'Вибори представника Психології 2026! (Responses) - Form Responses 1',
+	course: 3,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Дяків Влада', votes: 3 },
+		]
+	}
+},
+{
+	id: 'khomich-anna-vibori-predstavnika-psikhologiyi-2026-responses-form-responses-1-4',
+	name: 'Хомич Анна',
+	specialty: 'Вибори представника Психології 2026! (Responses) - Form Responses 1',
+	course: 4,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Хомич Анна', votes: 7 },
+		]
+	}
+},
+{
+	id: 'berezniuk-darina-vibori-predstavnika-robototekhniki-2026-responses-form-responses-1-2',
+	name: 'Березнюк Дарина',
+	specialty: 'Вибори представника Робототехніки 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Березнюк Дарина', votes: 5 },
+		]
+	}
+},
+{
+	id: 'volik-irina-vibori-predstavnika-sotsial-noyi-roboti-2026-responses-form-responses-1-1',
+	name: 'Волик Ірина',
+	specialty: 'Вибори представника Соціальної роботи 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Волик Ірина', votes: 12 },
+			{ name: 'Олещук Анастасія', votes: 4 },
+			{ name: 'Оленчук Яна', votes: 3 },
+		]
+	}
+},
+{
+	id: 'shlapak-oleksandra-vibori-predstavnika-sotsial-noyi-roboti-2026-responses-form-responses-1-2',
+	name: 'Шлапак Олександра',
+	specialty: 'Вибори представника Соціальної роботи 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Шлапак Олександра', votes: 2 },
+		]
+	}
+},
+{
+	id: 'iefimenko-rusana-vibori-predstavnika-sotsial-noyi-roboti-2026-responses-form-responses-1-3',
+	name: 'Єфіменко Русана',
+	specialty: 'Вибори представника Соціальної роботи 2026! (Responses) - Form Responses 1',
+	course: 3,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Єфіменко Русана', votes: 14 },
+		]
+	}
+},
+{
+	id: 'klimus-marta-vibori-predstavnika-sotsial-noyi-roboti-2026-responses-form-responses-1-4',
+	name: 'Климус Марта',
+	specialty: 'Вибори представника Соціальної роботи 2026! (Responses) - Form Responses 1',
+	course: 4,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Климус Марта', votes: 5 },
+		]
+	}
+},
+{
+	id: 'kachur-andrii-vibori-predstavnika-sotsiologiyi-2026-responses-form-responses-1-1',
+	name: 'Качур Андрій',
+	specialty: 'Вибори представника Соціології 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Качур Андрій', votes: 23 },
+			{ name: 'Ревега Анастасія', votes: 5 },
+		]
+	}
+},
+{
+	id: 'remizova-anastasiia-vibori-predstavnika-sotsiologiyi-2026-responses-form-responses-1-2',
+	name: 'Ремізова Анастасія',
+	specialty: 'Вибори представника Соціології 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Ремізова Анастасія', votes: 14 },
+		]
+	}
+},
+{
+	id: 'lipins-kii-oleksandr-vibori-predstavnika-upravlinnia-organizatsiiami-iaki-vplivaiut-2026-responses-form-responses-1-1',
+	name: 'Липинський Олександр',
+	specialty: 'Вибори представника Управління організаціями які впливають 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Липинський Олександр', votes: 1 },
+		]
+	}
+},
+{
+	id: 'tsarenko-sofiia-vibori-predstavnika-filologiyi-2026-responses-form-responses-1-2',
+	name: 'Царенко Софія',
+	specialty: 'Вибори представника Філології 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Царенко Софія', votes: 13 },
+			{ name: 'Хандон Зоряна', votes: 6 },
+		]
+	}
+},
+{
+	id: 'shutka-ivan-rostislav-vibori-predstavnika-khristiians-ka-pedagogika-2026-responses-form-responses-1-2',
+	name: 'Шутка Іван-Ростислав',
+	specialty: 'Вибори представника Християнська педагогіка 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Шутка Іван-Ростислав', votes: 2 },
+		]
+	}
+},
+{
+	id: 'savruk-olena-menedzhment-marketingovoyi-diial-nosti-2026-responses-form-responses-1-1',
+	name: 'Саврук Олена',
+	specialty: 'Менеджмент маркетингової діяльності 2026!  (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Саврук Олена', votes: 1 },
+		]
+	}
+},
+{
+	id: 'babliak-olena-prava-magistratura-2026-responses-form-responses-1-1',
+	name: 'Бабляк Олена',
+	specialty: 'Права (магістратура) 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Бабляк Олена', votes: 5 },
+		]
+	}
+},
+{
+	id: 'babliak-olena-prava-magistratura-2026-responses-form-responses-1-2',
+	name: 'Бабляк Олена',
+	specialty: 'Права (магістратура) 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Бабляк Олена', votes: 1 },
+		]
+	}
+},
+{
+	id: 'gritsik-solomiia-pravo-2026-responses-form-responses-1-1',
+	name: 'Грицик Соломія',
+	specialty: 'Право 2026! (Responses) - Form Responses 1',
+	course: 1,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Грицик Соломія', votes: 20 },
+			{ name: 'Макух Денис', votes: 9 },
+			{ name: 'Мищишин Ярина', votes: 3 },
+			{ name: 'Яковчук Евеліна', votes: 2 },
+		]
+	}
+},
+{
+	id: 'muriniuk-nataliia-pravo-2026-responses-form-responses-1-2',
+	name: 'Муринюк Наталія',
+	specialty: 'Право 2026! (Responses) - Form Responses 1',
+	course: 2,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Муринюк Наталія', votes: 16 },
+		]
+	}
+},
+{
+	id: 'levchuk-mariia-pravo-2026-responses-form-responses-1-3',
+	name: 'Левчук Марія',
+	specialty: 'Право 2026! (Responses) - Form Responses 1',
+	course: 3,
+	photo: 'placeholder',
+	votingData: {
+		candidates: [
+			{ name: 'Левчук Марія', votes: 15 },
+			{ name: 'Лесьо Софія', votes: 7 },
+		]
+	}
+},

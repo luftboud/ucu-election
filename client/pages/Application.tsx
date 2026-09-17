@@ -47,7 +47,7 @@ export default function Application() {
 
           {/* Applications open */}
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Голосування завершено!
           </h1>
           <p className="text-lg text-ivory/80 mb-12 font-medium">
@@ -57,7 +57,7 @@ export default function Application() {
             className="h-40 mx-auto mb-8"
             src="images/cat_glasses.png"
             alt="a cat looking"
-          />
+          /> */}
           {/* <button
             onClick={handleApplyClick}
             className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
@@ -67,24 +67,24 @@ export default function Application() {
 
           {/* Applications closed */}
 
-          {/* <h1 className="text-4xl md:text-5xl font-bold mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Вітаємо 6 скликання Ради студентів УКУ!
           </h1>
           <p className="text-lg text-ivory/80 mb-8 font-medium">
-            Наступне голосування чекайте в 2026 :)
+            Наступне голосування чекайте в 2027 :)
           </p>
           <img
             className="h-40 mx-auto mb-8"
             src="images/cat_glasses.png"
             alt="a cat looking"
-          /> */}
-          {/* <Link to={`/voting`}>
+          />
+          <Link to={`/results`}>
             <button
               className="bg-ivory text-dark-blue px-10 py-3 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
-              Голосувати
+              Переглянути результати
             </button>
-          </Link> */}
+          </Link>
         </div>
         {/* Scroll Down Button */}
         <div className="absolute bottom-[5%] left-0 right-0 flex justify-center">

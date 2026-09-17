@@ -28,155 +28,117 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Гуманітарний',
     representatives: [
       {
-	id: "kaleniuk-iarina", 
-	name: 'Каленюк Ярина', 
-	specialty: 'Філологія', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1K58Qv8QPgTIQO9bCPSVv6wWopAvfLSKE', 
-	votingData: {
-		candidates: [
-			{ name: "Каленюк Ярина", votes: 19},
-			{ name: "Хандон Зоряна", votes: 6},
-			{ name: "Харко Юлія", votes: 3},
-		]
-	}
-},
-{
-	id: "slotsiak-anna", 
-	name: 'Слоцяк Анна', 
-	specialty: 'Філологія', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/13t50tCyAdjMpUVc0g4RM-m21ACOHopie', 
-	votingData: {
-		candidates: [
-			{ name: "Слоцяк Анна", votes: 3},
-		]
-	}
-},
-      {
-        id: "kuzishin-iuliana",
-        name: 'Кузишин Юліана',
+        id: 'tsarenko-sofiia',
+        name: 'Царенко Софія',
         specialty: 'Філологія',
-        course: 3,
-        photo: 'https://lh3.googleusercontent.com/d/136ZGAqmXZGpwihCeBdyJeIaG7EBT69wI',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/16XyZfWDT_YJQz7PmzBYoiQhFhuiVsMmj',
         votingData: {
           candidates: [
-            { name: "Кузишин Юліана", votes: 3 },
+            { name: 'Царенко Софія', votes: 13 },
+            { name: 'Хандон Зоряна', votes: 6 },
           ]
         }
       },
-  {
-	id: "tsarelunga-anna", 
-	name: 'Царелунга Анна', 
-	specialty: 'Історія', 
-	course: 1,
-	photo: 'https://lh3.googleusercontent.com/d/1DXH5GrPgcBNUNLYGr-MWIqYpktyDxn5G', 
-	votingData: {
-		candidates: [
-			{ name: "Царелунга Анна", votes: 12},
-			{ name: "Пославська Яна", votes: 6},
-			{ name: "Куракіна Єлизавета", votes: 3},
-		]
-	}
-},
-{
-	id: "mikhailets-mariia", 
-	name: 'Михайлець Марія', 
-	specialty: 'Історія', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1NeaId7xAVLPReXD70TCnYOCYW5JG8boi', 
-	votingData: {
-		candidates: [
-			{ name: "Михайлець Марія", votes: 9},
-		]
-	}
-},
-{
-	id: "stemkovs-kii-marko", 
-	name: 'Стемковський Марко', 
-	specialty: 'Історія', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/1ukc5MsZN2l0ApiDUypAO9B7PZ4vb9D19', 
-	votingData: {
-		candidates: [
-			{ name: "Стемковський Марко", votes: 4},
-		]
-	}
-},
-{
-	id: "shchurko-nazar-teodor", 
-	name: 'Щурко Назар-Теодор', 
-	specialty: 'Історія', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1LQPoFmX_JMYRggHae3TkWJYALJz6JYkP', 
-	votingData: {
-		candidates: [
-			{ name: "Щурко Назар-Теодор", votes: 9},
-			{ name: "Кондратюк Марта", votes: 5},
-		]
-	}
-},
-{
-	id: "iakobshe-sofiia", 
-	name: 'Якобше Софія', 
-	specialty: 'Культурологія', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1EutWxi95_GQlar6FvSe4eo4GnpEPwW_l', 
-	votingData: {
-		candidates: [
-			{ name: "Якобше Софія", votes: 13},
-		]
-	}
-},
-{
-	id: "zakharchuk-darina", 
-	name: 'Захарчук Дарина', 
-	specialty: 'Культурологія', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1uSBDx_o4wj2FdKsXNJw5YW8oZ-xhblth', 
-	votingData: {
-		candidates: [
-			{ name: "Захарчук Дарина", votes: 14},
-			{ name: "Мельник Анна", votes: 2},
-		]
-	}
-},
-{
-	id: "grishuk-marko", 
-	name: 'Гришук Марко', 
-	specialty: 'Культурологія', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/1x6GR9jdVaHrgwXekomFcA2JVTfSpTcL7', 
-	votingData: {
-		candidates: [
-			{ name: "Гришук Марко", votes: 8},
-		]
-	}
-},
-{
-	id: "ful-mes-miroslava", 
-	name: 'Фульмес Мирослава', 
-	specialty: 'Культурологія', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1QfSGTZUvQDNaFCTfi5enGoeuB8LOX617', 
-	votingData: {
-		candidates: [
-			{ name: "Фульмес Мирослава", votes: 2},
-		]
-	}
+      {
+        id: 'dovzhenko-rostislav',
+        name: 'Довженко Ростислав',
+        specialty: 'Історія',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1P--jem_RuizAew3XOtNyI7W0A-pQBPgF',
+        votingData: {
+          candidates: [
+            { name: 'Довженко Ростислав', votes: 8 },
+            { name: 'Шумейко Михайло', votes: 1 },
+            { name: 'Макогоненко Анна-Марія', votes: 0 },
+          ]
+        }
       },
       {
-	id: "birulia-maria", 
-	name: 'Біруля Марія', 
-	specialty: 'Майбутнє Спадщини', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1roFfw_9spOjgzghRM-RYa69Ocvh1MZYg', 
-	votingData: {
-		candidates: [
-			{ name: "Біруля Марія", votes: 0},
-		]
-	}
-},
+        id: 'tsarelunga-anna',
+        name: 'Царелунга Анна',
+        specialty: 'Історія',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1MUmzbSPXMN_IngLc8cMNtYetpeaNSdGw',
+        votingData: {
+          candidates: [
+            { name: 'Царелунга Анна', votes: 13 },
+          ]
+        }
+      },
+      {
+        id: 'chub-illia',
+        name: 'Чуб Ілля',
+        specialty: 'Історія',
+        course: 3,
+        photo: 'https://lh3.googleusercontent.com/d/1O_Xeb4ubtuvs0ih_80GAmmuSd6O1kM1k',
+        votingData: {
+          candidates: [
+            { name: 'Чуб Ілля', votes: 3 },
+          ]
+        }
+      },
+      {
+        id: 'stemkovs-kii-marko',
+        name: 'Стемковський Марко',
+        specialty: 'Історія',
+        course: 4,
+        photo: 'https://lh3.googleusercontent.com/d/1DmQQFshPY3sG1g87ppFri4n0gnnlW8CE',
+        votingData: {
+          candidates: [
+            { name: 'Стемковський Марко', votes: 2 },
+          ]
+        }
+      },
+      {
+        id: 'siniuta-uliana',
+        name: 'Синюта Уляна',
+        specialty: 'Культурологія',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1IWHU6riRG8LvdFju8LvgxWZ5zcGNxtuC',
+        votingData: {
+          candidates: [
+            { name: 'Синюта Уляна', votes: 9 },
+            { name: 'Фомінська Тетяна', votes: 4 },
+          ]
+        }
+      },
+      {
+        id: 'kaleniuk-iarina',
+        name: 'Каленюк Ярина',
+        specialty: 'Культурологія',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1bRr3DMDKUIT0xHhKItrlmyGRXJ3yp2E1',
+        votingData: {
+          candidates: [
+            { name: 'Каленюк Ярина', votes: 2 },
+          ]
+        }
+      },
+      {
+        id: 'govorun-valeriia',
+        name: 'Говорун Валерія',
+        specialty: 'Культурологія',
+        course: 4,
+        photo: 'https://lh3.googleusercontent.com/d/1qYd7FLmJIr0ClbOIdAxrPvs_24AZehib',
+        votingData: {
+          candidates: [
+            { name: 'Говорун Валерія', votes: 4 },
+          ]
+        }
+      },
+      {
+        id: 'muzika-bogdana',
+        name: 'Музика Богдана',
+        specialty: 'Майбутнє спадщини',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1heYNlfFVPuc4FqFinFgUzkKsHBdPUor-',
+        votingData: {
+          candidates: [
+            { name: 'Музика Богдана', votes: 11 },
+          ]
+        }
+      },
     ]
   },
   {
@@ -184,79 +146,91 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Наук про Здоров\'я',
     representatives: [
       {
-	id: "shlapak-oleksandra", 
-	name: 'Шлапак Олександра', 
-	specialty: 'Соціальна робота', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1RzR4eAZX7rEIy2ACfkASt3NzadmYOFl1', 
-	votingData: {
-		candidates: [
-			{ name: "Шлапак Олександра", votes: 3},
-		]
-	}
-},
-{
-	id: "klimus-marta", 
-	name: 'Климус Марта', 
-	specialty: 'Соціальна робота', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/1ReObJ1NHSeDmKpFkICJvvoiQIPf0aLVb', 
-	votingData: {
-		candidates: [
-			{ name: "Климус Марта", votes: 4},
-		]
-	}
-},
-{
-	id: "biliak-liliia", 
-	name: 'Біляк Лілія', 
-	specialty: 'Соціальна робота', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1jNQbxYqqHd1ysh-EVdrsGmnVO-ENHgan', 
-	votingData: {
-		candidates: [
-			{ name: "Біляк Лілія", votes: 5},
-		]
-	}
-},
-{
-	id: "zolotoverkha-polina", 
-	name: 'Золотоверха Поліна', 
-	specialty: 'Психологія', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1dLRwCA4ZZ_e2GU1txdnOFaMQQ5P68hDT', 
-	votingData: {
-		candidates: [
-			{ name: "Золотоверха Поліна", votes: 7},
-		]
-	}
-},
-{
-	id: "khomich-anna", 
-	name: 'Хомич Анна', 
-	specialty: 'Психологія', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/12iZpClb1XBgUSNbv0N43Zd_8yseGGvT6', 
-	votingData: {
-		candidates: [
-			{ name: "Хомич Анна", votes: 13},
-			{ name: "Кароліна Мировська", votes: 2},
-		]
-	}
-},
-{
-	id: "kozak-sofiia-ieva", 
-	name: 'Козак Софія-Єва', 
-	specialty: 'Психологія', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1M8e_zS2VFtj20OYWCJ7wVoOvjJRA0obi', 
-	votingData: {
-		candidates: [
-			{ name: "Козак Софія-Єва", votes: 3},
-		]
-	}
-},
-
+        id: 'volik-irina',
+        name: 'Волик Ірина',
+        specialty: 'Соціальна робота',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1B5hLFQBRYCFXNC9oaKt-4NErERkIwnZ5',
+        votingData: {
+          candidates: [
+            { name: 'Волик Ірина', votes: 12 },
+            { name: 'Олещук Анастасія', votes: 4 },
+            { name: 'Оленчук Яна', votes: 3 },
+          ]
+        }
+      },
+      {
+        id: 'shlapak-oleksandra',
+        name: 'Шлапак Олександра',
+        specialty: 'Соціальна робота',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1bR6biIkWXmczEwlHgAxLCSDSAClbfjw4',
+        votingData: {
+          candidates: [
+            { name: 'Шлапак Олександра', votes: 2 },
+          ]
+        }
+      },
+      {
+        id: 'iefimenko-rusana',
+        name: 'Єфіменко Русана',
+        specialty: 'Соціальна робота',
+        course: 3,
+        photo: 'https://lh3.googleusercontent.com/d/17eGt4kdzvjjgllgPKXDtAtN7B9H8ZWxd',
+        votingData: {
+          candidates: [
+            { name: 'Єфіменко Русана', votes: 14 },
+          ]
+        }
+      },
+      {
+        id: 'klimus-marta',
+        name: 'Климус Марта',
+        specialty: 'Соціальна робота',
+        course: 4,
+        photo: 'https://lh3.googleusercontent.com/d/1TD3k6We147qxQDH70Sqenu7qLXjfeaE3',
+        votingData: {
+          candidates: [
+            { name: 'Климус Марта', votes: 5 },
+          ]
+        }
+      },
+      {
+        id: 'diakiv-vlada',
+        name: 'Дяків Влада',
+        specialty: 'Психологія',
+        course: 3,
+        photo: 'https://lh3.googleusercontent.com/d/1wRJkesAoqDZM9tbPzWmpjbBEGT7zd2V3',
+        votingData: {
+          candidates: [
+            { name: 'Дяків Влада', votes: 3 },
+          ]
+        }
+      },
+      {
+        id: 'khomich-anna',
+        name: 'Хомич Анна',
+        specialty: 'Психологія',
+        course: 4,
+        photo: 'https://lh3.googleusercontent.com/d/18gpVMkzGvjfNm006qWyF0CGG31TSm7G1',
+        votingData: {
+          candidates: [
+            { name: 'Хомич Анна', votes: 7 },
+          ]
+        }
+      },
+      {
+        id: 'koval-anastasiia',
+        name: 'Коваль Анастасія',
+        specialty: 'Клінічна психологія (психодинамічна терапія)',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1tEFDm_dzELB-Pip2iyuHSq-G9VYvKpo_',
+        votingData: {
+          candidates: [
+            { name: 'Коваль Анастасія', votes: 2 },
+          ]
+        }
+      },
     ]
   },
   {
@@ -264,106 +238,93 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Суспільних Наук',
     representatives: [
       {
-	id: "burilo-nataliia", 
-	name: 'Бурило Наталія', 
-	specialty: 'Етика-Політика-Економіка', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1yFE8QpxnSnQry9xX1iqswZoikLPm996n', 
-	votingData: {
-		candidates: [
-			{ name: "Бурило Наталія", votes: 21},
-			{ name: "Боднар Арсеній", votes: 10},
-			{ name: "Колодій Таїсія", votes: 5},
-			{ name: "Ільчишин Вікторія", votes: 2},
-			{ name: "Паньків Ольга", votes: 1},
-		]
-	}
-},
-{
-	id: "pakosh-nataliia", 
-	name: 'Пакош Наталія', 
-	specialty: 'Етика-Політика-Економіка', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1iISBLd0KXdOab_EZXYuDoE79QfDVxIyi', 
-	votingData: {
-		candidates: [
-			{ name: "Пакош Наталія", votes: 17},
-			{ name: "Лучишин Анастасія", votes: 15},
-		]
-	}
-},
-{
-	id: "teglivets-dmitro", 
-	name: 'Теглівець Дмитро', 
-	specialty: 'Етика-Політика-Економіка', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/1zotnY-2e2z52pKkOoBWIboPxx8DZZScO', 
-	votingData: {
-		candidates: [
-			{ name: "Теглівець Дмитро", votes: 25},
-		]
-	}
-},
-{
-	id: "podola-ustim", 
-	name: 'Подола Устим', 
-	specialty: 'Етика-Політика-Економіка', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1Q5fj9FBDDmzoCt9pbvwAs_DqopG1QvzQ', 
-	votingData: {
-		candidates: [
-			{ name: "Подола Устим", votes: 8},
-		]
-	}
+        id: 'smetana-iuliana',
+        name: 'Сметана Юліана',
+        specialty: 'Етика-політика-економіка',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1aI1JcbGZiQgl4koaowgiAhz-WaRTDq2a',
+        votingData: {
+          candidates: [
+            { name: 'Сметана Юліана', votes: 23 },
+            { name: 'Григоровський Юрій', votes: 10 },
+            { name: 'Камілла Монастирська', votes: 6 },
+            { name: 'Петрова Вікторія', votes: 3 },
+          ]
+        }
       },
-{
-	id: "liubchenko-sofiia", 
-	name: 'Любченко Софія', 
-	specialty: 'Соціологія', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1gO_zdM8n_mRQFkKBXKLc0zDgDaG5Jnli', 
-	votingData: {
-		candidates: [
-			{ name: "Любченко Софія", votes: 20},
-		]
-	}
-},
-{
-	id: "khmel-nik-sofiia", 
-	name: 'Хмельник Софія', 
-	specialty: 'Соціологія', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1yg_pZCibrx_cVhPLfo4BFqluH2EpjKfZ', 
-	votingData: {
-		candidates: [
-			{ name: "Хмельник Софія", votes: 11},
-		]
-	}
-},
-{
-	id: "khmel-nik-sofiia", 
-	name: 'Дубік Софія', 
-	specialty: 'Журналістика', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/17xaP7KlBC8tNVzXERfQOaxr6CWo41Nzj', 
-	votingData: {
-		candidates: [
-			{ name: "Дубік Софія", votes: 0},
-		]
-	}
+      {
+        id: 'il-chishin-viktoriia',
+        name: 'Ільчишин Вікторія',
+        specialty: 'Етика-політика-економіка',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1q8R8H_EjGnnUoVyJjrSILupLfgiAbbYy',
+        votingData: {
+          candidates: [
+            { name: 'Ільчишин Вікторія', votes: 11 },
+          ]
+        }
       },
-{
-	id: "manuilenko-danilo", 
-	name: 'Мануйленко Данило', 
-	specialty: 'Публічне управління та адміністрування', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1hn-FRfgQqCvD1yYc_jjdIf64-yt5fiHX', 
-	votingData: {
-		candidates: [
-			{ name: "Мануйленко Данило", votes: 4},
-		]
-	}
-},
+      {
+        id: 'german-ol-ga',
+        name: 'Герман Ольга',
+        specialty: 'Етика-політика-економіка',
+        course: 4,
+        photo: 'https://lh3.googleusercontent.com/d/1sS2NZAr8WCRao5LibtBLBRhQDAk4oynn',
+        votingData: {
+          candidates: [
+            { name: 'Герман Ольга', votes: 7 },
+          ]
+        }
+      },
+      {
+        id: 'kachur-andrii',
+        name: 'Качур Андрій',
+        specialty: 'Соціологія',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1hpw1LIAATsvwxS_-OZutz9bo8EDRj0xg',
+        votingData: {
+          candidates: [
+            { name: 'Качур Андрій', votes: 23 },
+            { name: 'Ревега Анастасія', votes: 5 },
+          ]
+        }
+      },
+      {
+        id: 'remizova-anastasiia',
+        name: 'Ремізова Анастасія',
+        specialty: 'Соціологія',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/10Jv88yqPm-KW5Zvkj3slHJmTD2Fq0BRi',
+        votingData: {
+          candidates: [
+            { name: 'Ремізова Анастасія', votes: 14 },
+          ]
+        }
+      },
+      {
+        id: 'koziatins-kii-dmitro',
+        name: 'Козятинський Дмитро',
+        specialty: 'Публічне управління та адміністрування',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1w2dQJhWrGIHnDDDjsS-k4ULqgdekVxXH',
+        votingData: {
+          candidates: [
+            { name: 'Козятинський Дмитро', votes: 0 },
+          ]
+        }
+      },
+      {
+        id: 'manuilenko-danilo',
+        name: 'Мануйленко Данило',
+        specialty: 'Публічне управління та адміністрування',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/10Z_6X_UbJXWbtr89t1MXrZOs_YT42uCZ',
+        votingData: {
+          candidates: [
+            { name: 'Мануйленко Данило', votes: 0 },
+          ]
+        }
+      },
     ]
   },
   {
@@ -371,56 +332,80 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Прикладних Наук',
     representatives: [
       {
-	id: "shimushovs-ka-khristina", 
-	name: 'Шимушовська Христина', 
-	specialty: "Комп'ютерні науки", 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1bi7HKzv_4G2udrRbtFZMhK4ETSjk_iDd', 
-	votingData: {
-		candidates: [
-			{ name: "Шимушовська Христина", votes: 8},
-			{ name: "Леськів Злата-Антоніна", votes: 7},
-			{ name: "Якимащенко Артем", votes: 3},
-		]
-	}
-},
-{
-	id: "magarita-iia", 
-	name: 'Магарита Ія', 
-	specialty: "Комп'ютерні науки", 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/19-ANtn2iZ-oHYI5olloWy8FnDHhsBMZa', 
-	votingData: {
-		candidates: [
-			{ name: "Магарита Ія", votes: 11},
-		]
-	}
-      },
-{
-	id: "lem-anastasiia", 
-	name: 'Лем Анастасія', 
-	specialty: 'ІТ та аналітика рішень', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1CNDpANet3HiGCuBXrr_oO133_cRje-_3', 
-	votingData: {
-		candidates: [
-			{ name: "Лем Анастасія", votes: 9},
-		]
-	}
+        id: 'knish-sofiia',
+        name: 'Книш Софія',
+        specialty: "Комп'ютерні науки",
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1-2CVzsZ5qibqjYelrbtwMh389sthdFO5',
+        votingData: {
+          candidates: [
+            { name: 'Книш Софія', votes: 12 },
+            { name: 'Гридова Катерина', votes: 6 },
+          ]
+        }
       },
       {
-	id: "berezniuk-darina", 
-	name: 'Березнюк Дарина', 
-	specialty: 'Робототехніка', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1vsqiswTzB8xMhN0TGLpK11r8NpTiIQSO', 
-	votingData: {
-		candidates: [
-			{ name: "Березнюк Дарина", votes: 10},
-		]
-	}
-},
-
+        id: 'shimushovs-ka-khristina',
+        name: 'Шимушовська Христина',
+        specialty: "Комп'ютерні науки",
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1zsAbG75rr5OpY-QVm1hx9hIyb9JtLYB1',
+        votingData: {
+          candidates: [
+            { name: 'Шимушовська Христина', votes: 6 },
+          ]
+        }
+      },
+      {
+        id: 'magarita-iia',
+        name: 'Магарита Ія',
+        specialty: "Комп'ютерні науки",
+        course: 3,
+        photo: 'https://lh3.googleusercontent.com/d/136RNxhl3MOGT3PjyR23intKRacTwlN-U',
+        votingData: {
+          candidates: [
+            { name: 'Магарита Ія', votes: 6 },
+          ]
+        }
+      },
+      {
+        id: 'sabadakh-roman',
+        name: 'Сабадах Роман',
+        specialty: 'ІТ та аналітика рішень',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1BjeSzQ24vVKrT7mHcwt0f27DcjvsjDOl',
+        votingData: {
+          candidates: [
+            { name: 'Сабадах Роман', votes: 9 },
+            { name: 'Бондаренко Владислава', votes: 7 },
+            { name: 'Бартошук Даніела', votes: 0 },
+          ]
+        }
+      },
+      {
+        id: 'lem-anastasiia',
+        name: 'Лем Анастасія',
+        specialty: 'ІТ та аналітика рішень',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1j6jMsHfhdSkW4zVbOJpDjSGB1mh64L15',
+        votingData: {
+          candidates: [
+            { name: 'Лем Анастасія', votes: 3 },
+          ]
+        }
+      },
+      {
+        id: 'berezniuk-darina',
+        name: 'Березнюк Дарина',
+        specialty: 'Робототехніка',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1oKwcsCPTiRxE7faydmm5rW5OfaHgKZsl',
+        votingData: {
+          candidates: [
+            { name: 'Березнюк Дарина', votes: 5 },
+          ]
+        }
+      },
     ]
   },
   {
@@ -428,69 +413,69 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Факультет Права',
     representatives: [
       {
-	id: "lutsik-vasil", 
-	name: 'Луцик Василь', 
-	specialty: 'Право', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1e7OfDmosJki5CGuQfuohHmVuQAcTb5Zg', 
-	votingData: {
-		candidates: [
-			{ name: "Луцик Василь", votes: 28},
-			{ name: "Муринюк Наталія", votes: 17},
-		]
-	}
-},
-{
-	id: "lies-o-sofiia", 
-	name: 'Лєсьо Софія', 
-	specialty: 'Право', 
-	course: 2, 
-	photo: 'https://lh3.googleusercontent.com/d/1MYMvYe_ux1oILMXCuQMk88GEBT-Pvkue', 
-	votingData: {
-		candidates: [
-			{ name: "Лєсьо Софія", votes: 9},
-			{ name: "Качмар Марія Ігорівна", votes: 8},
-			{ name: "Зохнюк Сабіна", votes: 4},
-		]
-	}
-},
-{
-	id: "sierova-solomiia", 
-	name: 'Сєрова Соломія', 
-	specialty: 'Право', 
-	course: 3, 
-	photo: 'https://lh3.googleusercontent.com/d/1Ydg9hq-6cr9nglpLraGuU5LnMthmxjs6', 
-	votingData: {
-		candidates: [
-			{ name: "Сєрова Соломія", votes: 15},
-		]
-	}
-},
-{
-	id: "kavin-oleksii", 
-	name: 'Кавин Олексій', 
-	specialty: 'Право', 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1P4I_zTN3VTHrw6O4l_7Pyzpofu4_Gk_I', 
-	votingData: {
-		candidates: [
-			{ name: "Кавин Олексій", votes: 5},
-		]
-	}
-},
-{
-	id: "dovgun-ivan", 
-	name: 'Довгун Іван', 
-	specialty: 'Право (магістратура)', 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1FcjJkjWMeyiZA9zXXeD7rTT_x-0Xee5X', 
-	votingData: {
-		candidates: [
-      { name: "Довгун Іван", votes: 6 },
-      { name: "Дзядик Віталій", votes: 0 },
-		]
-	}
-},
+        id: 'gritsik-solomiia',
+        name: 'Грицик Соломія',
+        specialty: 'Право',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/17NyMhqi-b4tOI17fdEJl88GzT95tAWWM',
+        votingData: {
+          candidates: [
+            { name: 'Грицик Соломія', votes: 20 },
+            { name: 'Макух Денис', votes: 9 },
+            { name: 'Мищишин Ярина', votes: 3 },
+            { name: 'Яковчук Евеліна', votes: 2 },
+          ]
+        }
+      },
+      {
+        id: 'muriniuk-nataliia',
+        name: 'Муринюк Наталія',
+        specialty: 'Право',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1lqsWV-rXqXCcUxIGB4D8SIlxzuKoR28I',
+        votingData: {
+          candidates: [
+            { name: 'Муринюк Наталія', votes: 16 },
+          ]
+        }
+      },
+      {
+        id: 'levchuk-mariia',
+        name: 'Левчук Марія',
+        specialty: 'Право',
+        course: 3,
+        photo: 'https://lh3.googleusercontent.com/d/1HTzcQulv8lqdUQ7Ai5kwNNOWOcgH5_HA',
+        votingData: {
+          candidates: [
+            { name: 'Левчук Марія', votes: 15 },
+            { name: 'Лєсьо Софія', votes: 7 },
+          ]
+        }
+      },
+      {
+        id: 'babliak-olena',
+        name: 'Бабляк Олена',
+        specialty: 'Право (магістратура)',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1jKWMp1SAE6LEm5DMPCHc6AScJztFzSal',
+        votingData: {
+          candidates: [
+            { name: 'Бабляк Олена', votes: 5 },
+          ]
+        }
+      },
+      {
+        id: 'dovhun-ivan',
+        name: 'Довгун Іван',
+        specialty: 'Право (магістратура)',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1Jhlmt1tCmE1LSRfIPwfb3wXWUUU791UA',
+        votingData: {
+          candidates: [
+            { name: 'Довгун Іван', votes: 6 },
+          ]
+        }
+      },
     ]
   },
   {
@@ -498,42 +483,60 @@ export const electedRepresentatives: Faculty[] = [
     name: 'Філософсько-Богословський',
     representatives: [
       {
-	id: "veronika-zakrevs-ka", 
-	name: 'Вероніка Закревська', 
-	specialty: "Богослов'я", 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/18qF3rn5whjYoWRuiCmZCtt3gnGVTGCGP', 
-	votingData: {
-		candidates: [
-			{ name: "Вероніка Закревська", votes: 3},
-		]
-	}
-},
-{
-	id: "pelin-o-valentina", 
-	name: 'Пелиньо Валентина', 
-	specialty: "Богослов'я", 
-	course: 4, 
-	photo: 'https://lh3.googleusercontent.com/d/1XMAJjiLQNiVvzgKmefW8SBgoWhBAkKok', 
-	votingData: {
-		candidates: [
-			{ name: "Пелиньо Валентина", votes: 5},
-		]
-	}
+        id: 'korotushak-sofiia',
+        name: 'Коротушак Софія',
+        specialty: "Богослов'я",
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1juGB2as_fkYofeh0wrnqdi2JBlo1JLp8',
+        votingData: {
+          candidates: [
+            { name: 'Коротушак Софія', votes: 1 },
+          ]
+        }
       },
-{
-	id: "pelin-o-valentina", 
-	name: 'Шутка Іван-Ростислав', 
-	specialty: "Християнська педагогіка", 
-	course: 1, 
-	photo: 'https://lh3.googleusercontent.com/d/1vGb60nb0y8KNFevURf7ZDJeNHyECEOTg', 
-	votingData: {
-		candidates: [
-			{ name: "Шутка Іван-Ростислав", votes: 0},
-		]
-	}
-},
-
+      {
+        id: 'shutka-ivan-rostislav',
+        name: 'Шутка Іван-Ростислав',
+        specialty: 'Християнська педагогіка',
+        course: 2,
+        photo: 'https://lh3.googleusercontent.com/d/1yFORVKGO4eTL0r91QEo6Gr9LOB8e2lb9',
+        votingData: {
+          candidates: [
+            { name: 'Шутка Іван-Ростислав', votes: 2 },
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: 'business-school',
+    name: 'Бізнес-школа',
+    representatives: [
+      {
+        id: 'savruk-olena',
+        name: 'Саврук Олена',
+        specialty: 'Менеджмент маркетингової діяльності',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1mZJQW3vDzPs8OuwOok3H3da0swmB1Nfw',
+        votingData: {
+          candidates: [
+            { name: 'Саврук Олена', votes: 1 },
+          ]
+        }
+      },
+      {
+        id: 'lipins-kii-oleksandr',
+        name: 'Липинський Олександр',
+        specialty: 'Управління організаціями які впливають',
+        course: 1,
+        photo: 'https://lh3.googleusercontent.com/d/1n2n5k6XOKd10fsh37XLT1r6qZ8jaqMmc',
+        votingData: {
+          candidates: [
+            { name: 'Липинський Олександр', votes: 1 },
+            { name: 'Решетков Олександр', votes: 0 },
+          ]
+        }
+      },
     ]
   }
 ];
